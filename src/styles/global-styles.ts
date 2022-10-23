@@ -17,12 +17,16 @@ html {
 body{
   font-size: 1.6rem;
   font-family: ${({ theme }) => theme.font.family.default};
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-family: ${({ theme }) => theme.font.family.secondary};
   font-weight: 900;
   margin: ${({ theme }) => theme.spacings.large} 0;
+
+  @media ${({ theme }) => theme.media.gteMedium} {
+    margin-bottom: ${({ theme }) => theme.spacings.xsmall};
+  }
 }
 
 p{

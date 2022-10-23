@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputSoil /> should render and match snapshot 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2.4rem;
+  position: relative;
+}
+
+.c1 span {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.c1 .unit {
+  color: gray;
+  position: absolute;
+  left: 97.5%;
+  text-align: right;
+}
+
+.c1 input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 25%;
+  font-size: 1.8rem;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.c1 input::-webkit-outer-spin-button,
+.c1 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.c0 {
+  padding: 0 3.2rem;
+  margin: 2.4rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 label:first-of-type {
+  width: 26%;
+}
+
+.c0 label:nth-of-type(2) {
+  width: 31%;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-right: 18px;
+    width: 33%;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 .unit {
+    left: 90%;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 input::-webkit-outer-spin-button,
+  .c1 input::-webkit-inner-spin-button {
+    margin-right: 5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <label
+      class="c1"
+    >
+      <span>
+        Área da Ponta
+      </span>
+      <input
+        name="price"
+        pattern="[0-9]+([.][0-9]+)?"
+        placeholder="0.00"
+        step="0.01"
+        title="This should be a number with up to 2 decimal places."
+        type="number"
+        value=""
+      />
+      <span
+        class="unit"
+      >
+        m²
+      </span>
+    </label>
+    <label
+      class="c1"
+    >
+      <span>
+        Perímetro do Fuste
+      </span>
+      <input
+        name="price"
+        pattern="[0-9]+([.][0-9]+)?"
+        placeholder="0.00"
+        step="0.01"
+        title="This should be a number with up to 2 decimal places."
+        type="number"
+        value=""
+      />
+      <span
+        class="unit"
+      >
+        m
+      </span>
+    </label>
+    <label
+      class="c1"
+    >
+      <span>
+        Comprimento do Fuste
+      </span>
+      <input
+        name="price"
+        pattern="[0-9]+([.][0-9]+)?"
+        placeholder="0.00"
+        step="0.01"
+        title="This should be a number with up to 2 decimal places."
+        type="number"
+        value=""
+      />
+      <span
+        class="unit"
+      >
+        m
+      </span>
+    </label>
+  </div>
+</div>
+`;

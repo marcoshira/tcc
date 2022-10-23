@@ -1,0 +1,22 @@
+Decourt-Quaresma:
+    input para tipo de solo (Argila, Silte argiloso, Silte arenoso, Areia)
+    input para tipo de estaca (Escavada em geral, Escavada bentonita, Hélice contínua, Raiz, Injetada sob altas pressões)
+    input para área da ponta
+    input para perímetro do fuste
+    input para comprimento do fuste
+    input para NSPT*
+Aoki-Velloso:
+    input para tipo de estaca (Franki, Metálica, Pré-moldada, Escavada, Hélice contínua & Raiz)
+    input para tipo de solo (Argila (comum, arenosa, arenossiltosa, siltosa, siltoarenosa), Silte (comum, arenoso, arenoargiloso, argiloso, argiloarenoso), 
+    Areia (comum, siltosa, siltoargilosa, argilosa, argilossiltosa))
+    input para área da ponta
+    input para perímetro do fuste
+    input para comprimento do fuste
+    input para NSPT*
+
+Real: 
+    1 - input para tipo de solo (Argila (comum, arenosa, arenossiltosa, siltosa, siltoarenosa), Silte (comum, arenoso, arenoargiloso, argiloso, argiloarenoso), 
+    Areia (comum, siltosa, siltoargilosa, argilosa, argilossiltosa))
+    2 - input para tipo de estaca (Escavada em geral, Escavada bentonita, Hélice contínua, Raiz, Injetada sob altas pressões, Franki, Metálica, Pré-moldada)
+    3 - input para área da ponta, input para perímetro do fuste, input para comprimento do fuste
+    4 - input para NSPT*
