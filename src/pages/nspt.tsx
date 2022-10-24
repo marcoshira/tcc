@@ -4,14 +4,16 @@ import { InputContext } from '../contexts/InputContext';
 import { Home } from '../templates/Home';
 
 export default function Index() {
-  const { formSubmit } = useContext(InputContext);
+  const { inputSoil, inputArea, inputLength, inputPerimeter, inputStake } =
+    useContext(InputContext);
 
   return (
     <>
       <Head>
-        <title>Estaca Web</title>
+        <title>Dados de Nspt</title>
       </Head>
-      <Home onFormSubmit={formSubmit} />
+      <p>{inputSoil}</p>
+      <p>{inputArea}</p>
     </>
   );
 }

@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
     width: 80%;
     flex-direction: column;
     justify-content: center;
+
+    @media ${theme.media.gteMedium} {
+      width: 90%;
+    }
   `}
 `;
 

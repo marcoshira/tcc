@@ -37,10 +37,14 @@ export const Wrapper = styled.label`
     input {
       border: none;
       border-bottom: 1px solid black;
-      width: 25%;
+      width: 17%;
       font-size: ${theme.font.sizes.gtsmall};
       text-align: right;
       margin-right: 10px;
+
+      @media ${theme.media.gteMedium} {
+        width: ${theme.spacings.xhuge};
+      }
     }
 
     /* Chrome, Safari, Edge, Opera */
