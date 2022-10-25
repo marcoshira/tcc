@@ -6,6 +6,7 @@ import { InputContainer } from '../../components/InputContainer';
 import { InputDim } from '../../components/InputDim';
 import { InputSoil } from '../../components/InputSoil';
 import { InputStake } from '../../components/InputStake';
+import { NsptInput } from '../../components/NsptInput';
 import { Wrapper } from '../../components/Wrapper';
 import * as Styled from './styles';
 
@@ -75,6 +76,9 @@ export function Home({ onFormSubmit = null }: HomeProps) {
             onFormChangePeri={handlePeri}
             onFormChangeComp={handleComp}
           />
+        </InputContainer>
+        <InputContainer title="Dados de SPT" frameSize="spt" depth={+formComp}>
+          <NsptInput depth={+formComp} />
         </InputContainer>
         <Link href="/nspt">
           <Button

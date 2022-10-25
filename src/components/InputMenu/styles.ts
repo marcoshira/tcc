@@ -32,10 +32,23 @@ const frameSize = {
       height: ${theme.frameSizes.gtsmall};
     }
   `,
+
+  spt: (theme, depth) => css`
+    height: ${depth < 6
+      ? theme.frameSizes.xsmall
+      : depth < 8
+      ? theme.frameSizes.ltsmall
+      : depth < 10
+      ? theme.frameSizes.small
+      : `${(depth - 10) * 2.5 + 26}rem`};
+    @media ${theme.media.gteMedium} {
+      height: ${`${(Math.floor(depth / 4) + 1) * 6}rem`};
+    }
+  `,
 };
 
 export const Wrapper = styled.div<InputMenuProps>`
-  ${({ theme, size }) => css`
+  ${({ theme, size, depth }) => css`
     display: flex;
     justify-content: center;
     height: 0px;
@@ -48,7 +61,7 @@ export const Wrapper = styled.div<InputMenuProps>`
     }
 
     &.open {
-      ${frameSize[size](theme)};
+      ${frameSize[size](theme, depth)};
       opacity: 1;
 
       > div {
@@ -56,8 +69,13 @@ export const Wrapper = styled.div<InputMenuProps>`
       }
     }
 
+    &.zero {
+      height: 0px;
+      opacity: 0;
+    }
+
     @media ${theme.media.gteMedium} {
-      ${frameSize[size](theme)};
+      ${frameSize[size](theme, depth)};
       opacity: 1;
 
       > div {

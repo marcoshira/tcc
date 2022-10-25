@@ -7,6 +7,7 @@ export type NumberInputProps = {
   value?: string;
   reference?: HTMLInputElement;
   un?: string;
+  placeholder?: string;
 } & InputHTMLAttributes<HTMLInputElement>;
 export const NumberInput = ({
   title,
@@ -14,6 +15,7 @@ export const NumberInput = ({
   value = '',
   reference = null,
   un = 'm',
+  placeholder = '0.00',
 }: NumberInputProps) => {
   const inputRef = useRef(reference);
 
@@ -34,7 +36,7 @@ export const NumberInput = ({
         pattern="[0-9]+([.][0-9]+)?"
         step="0.01"
         title="This should be a number with up to 2 decimal places."
-        placeholder={'0.00'}
+        placeholder={placeholder}
         ref={inputRef}
         defaultValue={value}
         onChange={handleChange}

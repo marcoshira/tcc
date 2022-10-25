@@ -6,12 +6,14 @@ import * as Styled from './styles';
 export type InputContainerProps = {
   children: ReactNode;
   title: string;
-  frameSize?: 'small' | 'medium' | 'mediumSmall' | 'big' | 'huge';
+  frameSize?: 'small' | 'medium' | 'mediumSmall' | 'big' | 'huge' | 'spt';
+  depth?: number;
 };
 export const InputContainer = ({
   children,
   title,
   frameSize = 'medium',
+  depth = null,
 }: InputContainerProps) => {
   const [display, setDisplay] = useState(false);
 
@@ -22,7 +24,7 @@ export const InputContainer = ({
   return (
     <Styled.Wrapper>
       <InputHeader title={title} onClick={handleDisplay} />
-      <InputMenu display={display} size={frameSize}>
+      <InputMenu display={display} size={frameSize} depth={depth}>
         {children}
       </InputMenu>
     </Styled.Wrapper>

@@ -9,8 +9,11 @@ export const Wrapper = styled.label`
     margin-bottom: ${theme.spacings.medium};
     position: relative;
 
+    .even {
+      color: red;
+    }
+
     @media ${theme.media.gteMedium} {
-      justify-content: space-between;
       padding-right: 18px;
       width: 33%;
     }
@@ -61,6 +64,12 @@ export const Wrapper = styled.label`
     /* Firefox */
     input[type='number'] {
       -moz-appearance: textfield;
+    }
+
+    &.even {
+      input {
+        width: 55%;
+      }
     }
   `}
 `;

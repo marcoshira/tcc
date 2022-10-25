@@ -61,6 +61,7 @@ export const theme = {
     small: '24rem',
     gtsmall: '28rem',
     smallMedium: '32rem',
+    ltmedium: '36rem',
     medium: '40rem',
     largeMedium: '56rem',
     large: '64rem',
