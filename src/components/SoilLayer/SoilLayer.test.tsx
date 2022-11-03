@@ -7,7 +7,6 @@ const func2 = jest.fn();
 const func3 = jest.fn();
 
 const props: SoilLayerProps = {
-  depth: 5,
   index: 0,
   onLayerFormChangeSoil: func1,
   onLayerFormChangeDepth: func2,

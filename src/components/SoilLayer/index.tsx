@@ -5,7 +5,7 @@ import { InputSoil } from '../InputSoil';
 
 export type SoilLayerProps = {
   index?: number;
-  onLayerFormChangeSoil?: ({}, index: number) => void;
+  onLayerFormChangeSoil?: (soil, index: number) => void;
   onLayerFormChangeDepth?: (depthSoil: string, index: number) => void;
   onRemoveLayer?: () => void;
 };
