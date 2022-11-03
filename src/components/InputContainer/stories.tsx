@@ -24,7 +24,7 @@ export const Template: Story<InputContainerProps> = () => {
       <Heading>JStake</Heading>
       <Wrapper>
         <InputContainer title="Tipos de Solo" frameSize="spt" depth={16}>
-          <InputSoilLayer depth={6} />
+          <InputSoilLayer />
         </InputContainer>
       </Wrapper>
     </div>
