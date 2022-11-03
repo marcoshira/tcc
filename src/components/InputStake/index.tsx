@@ -1,15 +1,10 @@
-import { useState } from 'react';
 import * as Styled from './styles';
 
 export type InputStakeProps = {
   onFormChangeStake?: (index: number) => void;
-  reference?: HTMLInputElement;
 };
 
-export const InputStake = ({
-  onFormChangeStake = null,
-  reference = null,
-}: InputStakeProps) => {
+export const InputStake = ({ onFormChangeStake = null }: InputStakeProps) => {
   const handleChange = (value: number) => {
     /* istanbul ignore else */
     if (onFormChangeStake) {

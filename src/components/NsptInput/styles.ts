@@ -2,12 +2,10 @@ import styled, { css } from 'styled-components';
 import { Wrapper as Number } from '../NumberInput/styles';
 
 export const Wrapper = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-  `}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
 `;
 
 export const NsptContainer = styled.div`

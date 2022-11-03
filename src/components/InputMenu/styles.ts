@@ -2,38 +2,38 @@ import styled, { css } from 'styled-components';
 import { InputMenuProps } from '.';
 
 const frameSize = {
-  small: (theme, depth, layer) => css`
+  small: (theme) => css`
     height: ${theme.frameSizes.xsmall};
     @media ${theme.media.gteMedium} {
       height: ${theme.frameSizes.xxsmall};
     }
   `,
-  mediumSmall: (theme, depth, layer) => css`
+  mediumSmall: (theme) => css`
     height: ${theme.frameSizes.small};
     @media ${theme.media.gteMedium} {
       height: ${theme.frameSizes.xxsmall};
     }
   `,
-  medium: (theme, depth, layer) => css`
+  medium: (theme) => css`
     height: ${theme.frameSizes.small};
     @media ${theme.media.gteMedium} {
       height: ${theme.frameSizes.ltxsmall};
     }
   `,
-  big: (theme, depth, layer) => css`
+  big: (theme) => css`
     height: ${theme.frameSizes.gtsmall};
     @media ${theme.media.gteMedium} {
       height: ${theme.frameSizes.small};
     }
   `,
-  huge: (theme, depth, layer) => css`
+  huge: (theme) => css`
     height: ${theme.frameSizes.smallMedium};
     @media ${theme.media.gteMedium} {
       height: ${theme.frameSizes.gtsmall};
     }
   `,
 
-  spt: (theme, depth, layer) => css`
+  spt: (theme, depth) => css`
     height: ${depth < 6
       ? theme.frameSizes.xsmall
       : depth < 8

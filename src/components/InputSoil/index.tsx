@@ -1,15 +1,13 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import * as Styled from './styles';
 
 export type InputSoilProps = {
-  onFormChangeSoil?: ({}) => void;
+  onFormChangeSoil?: (soil) => void;
   index?: number;
-  reference?: HTMLInputElement;
 };
 
 export const InputSoil = ({
   onFormChangeSoil = null,
-  reference = null,
   index = 0,
 }: InputSoilProps) => {
   const [firstRadio, setFirstRadio] = useState('Areia Comum');

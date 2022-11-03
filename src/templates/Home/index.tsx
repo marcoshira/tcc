@@ -203,7 +203,6 @@ export function Home({ modalElement = null }: HomeProps) {
             onFormChangeSoilLayer={handleLayerSoil}
             onFormChangeDepthSoilLayer={handleLayerDepthSoil}
             layer={formLayer}
-            depth={+formComp}
           />
         </InputContainer>
         <InputContainer

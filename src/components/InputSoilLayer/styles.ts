@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { Wrapper as NumberInput } from '../NumberInput/styles';
 import { Wrapper as Button } from '../Button/styles';
 
 export const Wrapper = styled.div`

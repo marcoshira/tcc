@@ -13,12 +13,9 @@ export default {
 export const Template: Story<NsptInputProps> = (args) => {
   return (
     <div>
-      <InputContainer
-        children={<NsptInput {...args} />}
-        title="Dados de SPT"
-        frameSize="spt"
-        depth={args.depth}
-      />
+      <InputContainer title="Dados de SPT" frameSize="spt" depth={args.depth}>
+        <NsptInput {...args} />
+      </InputContainer>
     </div>
   );
 };
