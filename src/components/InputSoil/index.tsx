@@ -2,13 +2,15 @@ import { useRef, useState } from 'react';
 import * as Styled from './styles';
 
 export type InputSoilProps = {
-  onFormChangeSoil?: (soil: string) => void;
+  onFormChangeSoil?: ({}) => void;
+  index?: number;
   reference?: HTMLInputElement;
 };
 
 export const InputSoil = ({
   onFormChangeSoil = null,
   reference = null,
+  index = 0,
 }: InputSoilProps) => {
   const [firstRadio, setFirstRadio] = useState('Areia Comum');
   const [secondRadio, setSecondRadio] = useState('Areia Siltosa');
@@ -16,14 +18,22 @@ export const InputSoil = ({
   const [fourthRadio, setFourthRadio] = useState('Areia Argilosa');
   const [fifthRadio, setFifthRadio] = useState('Areia Argilossiltosa');
 
-  const [selected, setSelected] = useState<number>();
+  const [selected, setSelected] = useState<string>();
+
+  const [type, setType] = useState('Areia');
 
   const [typeClass1, setTypeClass1] = useState(true);
   const [typeClass2, setTypeClass2] = useState(false);
   const [typeClass3, setTypeClass3] = useState(false);
 
-  const HandleTypeClick = async (type) => {
-    switch (type) {
+  const HandleTypeClick = (event) => {
+    setType(event.target.id);
+    /* istanbul ignore else */
+    if (onFormChangeSoil) {
+      onFormChangeSoil({ type: event.target.id, subtype: selected });
+    }
+
+    switch (event.target.id) {
       case 'Areia':
         setFirstRadio('Areia Comum');
         setSecondRadio('Areia Siltosa');
@@ -33,26 +43,6 @@ export const InputSoil = ({
         setTypeClass1(true);
         setTypeClass2(false);
         setTypeClass3(false);
-
-        if (onFormChangeSoil) {
-          switch (selected) {
-            case 1:
-              onFormChangeSoil('Areia Comum');
-              break;
-            case 2:
-              onFormChangeSoil('Areia Siltosa');
-              break;
-            case 3:
-              onFormChangeSoil('Areia Siltoargilosa');
-              break;
-            case 4:
-              onFormChangeSoil('Areia Argilosa');
-              break;
-            case 5:
-              onFormChangeSoil('Areia Argilossiltosa');
-              break;
-          }
-        }
         break;
       case 'Silte':
         setFirstRadio('Silte Comum');
@@ -63,25 +53,6 @@ export const InputSoil = ({
         setTypeClass1(false);
         setTypeClass2(true);
         setTypeClass3(false);
-        if (onFormChangeSoil) {
-          switch (selected) {
-            case 1:
-              onFormChangeSoil('Silte Comum');
-              break;
-            case 2:
-              onFormChangeSoil('Silte Arenoso');
-              break;
-            case 3:
-              onFormChangeSoil('Silte Arenoargiloso');
-              break;
-            case 4:
-              onFormChangeSoil('Silte Argiloso');
-              break;
-            case 5:
-              onFormChangeSoil('Silte Argiloarenoso');
-              break;
-          }
-        }
         break;
       case 'Argila':
         setFirstRadio('Argila Comum');
@@ -92,33 +63,15 @@ export const InputSoil = ({
         setTypeClass1(false);
         setTypeClass2(false);
         setTypeClass3(true);
-        if (onFormChangeSoil) {
-          switch (selected) {
-            case 1:
-              onFormChangeSoil('Argila Comum');
-              break;
-            case 2:
-              onFormChangeSoil('Argila Arenosa');
-              break;
-            case 3:
-              onFormChangeSoil('Argila Arenossiltosa');
-              break;
-            case 4:
-              onFormChangeSoil('Argila Siltosa');
-              break;
-            case 5:
-              onFormChangeSoil('Argila Siltoarenosa');
-              break;
-          }
-        }
         break;
     }
   };
 
-  const handleChange = (value: string, index: number) => {
-    setSelected(index);
+  const handleChange = (event) => {
+    setSelected(event.target.id);
+    /* istanbul ignore else */
     if (onFormChangeSoil) {
-      onFormChangeSoil(value);
+      onFormChangeSoil({ type: type, subtype: event.target.id });
     }
   };
 
@@ -126,20 +79,23 @@ export const InputSoil = ({
     <Styled.Wrapper>
       <Styled.TypeContainer>
         <Styled.Type
-          onClick={() => HandleTypeClick('Areia')}
+          onClick={HandleTypeClick}
           className={typeClass1 && 'selected'}
+          id="Areia"
         >
           Areia
         </Styled.Type>
         <Styled.Type
-          onClick={() => HandleTypeClick('Silte')}
+          onClick={HandleTypeClick}
           className={typeClass2 && 'selected'}
+          id="Silte"
         >
           Silte
         </Styled.Type>
         <Styled.Type
-          onClick={() => HandleTypeClick('Argila')}
+          onClick={HandleTypeClick}
           className={typeClass3 && 'selected'}
+          id="Argila"
         >
           Argila
         </Styled.Type>
@@ -150,9 +106,10 @@ export const InputSoil = ({
             {firstRadio}
             <input
               type="radio"
-              name="soil"
+              name={`soil ${index}`}
               value={firstRadio}
-              onClick={() => handleChange(firstRadio, 1)}
+              id="1"
+              onClick={handleChange}
             />
             <div className="control_indicator"></div>
           </label>
@@ -160,9 +117,10 @@ export const InputSoil = ({
             {secondRadio}
             <input
               type="radio"
-              name="soil"
+              name={`soil ${index}`}
               value={secondRadio}
-              onClick={() => handleChange(secondRadio, 2)}
+              id="2"
+              onClick={handleChange}
             />
             <div className="control_indicator"></div>
           </label>
@@ -170,9 +128,10 @@ export const InputSoil = ({
             {thirdRadio}
             <input
               type="radio"
-              name="soil"
+              name={`soil ${index}`}
               value={thirdRadio}
-              onClick={() => handleChange(thirdRadio, 3)}
+              id="3"
+              onClick={handleChange}
             />
             <div className="control_indicator"></div>
           </label>
@@ -180,9 +139,10 @@ export const InputSoil = ({
             {fourthRadio}
             <input
               type="radio"
-              name="soil"
+              name={`soil ${index}`}
               value={fourthRadio}
-              onClick={() => handleChange(fourthRadio, 4)}
+              id="4"
+              onClick={handleChange}
             />
             <div className="control_indicator"></div>
           </label>
@@ -190,9 +150,10 @@ export const InputSoil = ({
             {fifthRadio}
             <input
               type="radio"
-              name="soil"
+              name={`soil ${index}`}
               value={fifthRadio}
-              onClick={() => handleChange(fifthRadio, 5)}
+              id="5"
+              onClick={handleChange}
             />
             <div className="control_indicator"></div>
           </label>

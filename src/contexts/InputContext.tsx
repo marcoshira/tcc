@@ -35,7 +35,7 @@ export function InputProvider({ children }: InputProviderProps) {
     setInputArea(area);
     setInputPerimeter(perimeter);
     setInputLength(length);
-    Router.push('/nspt');
+    // Router.push('/nspt');
   }
 
   return (

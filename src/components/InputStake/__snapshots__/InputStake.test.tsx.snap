@@ -156,7 +156,6 @@ exports[`<InputSoil /> should render and match snapshot 1`] = `
           >
             Escavada em geral
             <input
-              checked=""
               name="stake"
               type="radio"
             />
@@ -167,7 +166,7 @@ exports[`<InputSoil /> should render and match snapshot 1`] = `
           <label
             class="control control-radio"
           >
-            Escavada bentonita
+            Escavada (bentonita)
             <input
               name="stake"
               type="radio"

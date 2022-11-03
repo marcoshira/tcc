@@ -20,3 +20,17 @@ Real:
     2 - input para tipo de estaca (Escavada em geral, Escavada bentonita, Hélice contínua, Raiz, Injetada sob altas pressões, Franki, Metálica, Pré-moldada)
     3 - input para área da ponta, input para perímetro do fuste, input para comprimento do fuste
     4 - input para NSPT*
+
+Decourt: 
+    Silte Comum resulta em quanto de C? 180
+    Estacas Franki, Metálica, Pré-moldada quanto de alfa e beta? 1
+    nl media ou indiv? indiv
+
+Aoki:
+    Injetada quanto f1 e f2? 2,0
+    D? (diametro / aresta?) sim
+    Nspt? na ponta msm
+
+Devia fazer para CPT?
+
+O spt da ponta é o da cota da ponta ou de baixo da ponta?

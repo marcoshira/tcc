@@ -11,7 +11,7 @@ export default function Index() {
       <Head>
         <title>Estaca Web</title>
       </Head>
-      <Home onFormSubmit={formSubmit} />
+      <Home modalElement="#__next" />
     </>
   );
 }

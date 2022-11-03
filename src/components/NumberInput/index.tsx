@@ -1,5 +1,5 @@
 import * as Styled from './styles';
-import { useState, useRef, InputHTMLAttributes } from 'react';
+import { useRef, InputHTMLAttributes } from 'react';
 
 export type NumberInputProps = {
   title?: string;
@@ -11,7 +11,7 @@ export type NumberInputProps = {
 } & InputHTMLAttributes<HTMLInputElement>;
 export const NumberInput = ({
   title,
-  onInputChange,
+  onInputChange = null,
   value = '',
   reference = null,
   un = 'm',
@@ -35,7 +35,7 @@ export const NumberInput = ({
         name="price"
         pattern="[0-9]+([.][0-9]+)?"
         step="0.01"
-        title="This should be a number with up to 2 decimal places."
+        title="This should be a number with up to 2 decimal places"
         placeholder={placeholder}
         ref={inputRef}
         defaultValue={value}

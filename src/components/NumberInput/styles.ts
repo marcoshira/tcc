@@ -9,10 +9,6 @@ export const Wrapper = styled.label`
     margin-bottom: ${theme.spacings.medium};
     position: relative;
 
-    .even {
-      color: red;
-    }
-
     @media ${theme.media.gteMedium} {
       padding-right: 18px;
       width: 33%;

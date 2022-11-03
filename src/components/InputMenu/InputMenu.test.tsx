@@ -40,7 +40,7 @@ describe('<InputMenu />', () => {
     );
 
     expect(container.firstChild).toHaveStyle({
-      height: '15rem',
+      height: '18rem',
     });
   });
 
@@ -71,6 +71,59 @@ describe('<InputMenu />', () => {
 
     expect(container.firstChild).toHaveStyle({
       height: '32rem',
+    });
+  });
+  it('should render spt < 6 height ', () => {
+    const { container } = renderTheme(
+      <InputMenu {...props} display={true} size="spt" depth={2} />,
+    );
+
+    expect(container.firstChild).toHaveStyle({
+      height: '18rem',
+    });
+  });
+  it('should render spt < 8 height ', () => {
+    const { container } = renderTheme(
+      <InputMenu {...props} display={true} size="spt" depth={7} />,
+    );
+
+    expect(container.firstChild).toHaveStyle({
+      height: '21rem',
+    });
+  });
+  it('should render spt < 10 height ', () => {
+    const { container } = renderTheme(
+      <InputMenu {...props} display={true} size="spt" depth={8} />,
+    );
+
+    expect(container.firstChild).toHaveStyle({
+      height: '24rem',
+    });
+  });
+  it('should render spt > 10 height ', () => {
+    const { container } = renderTheme(
+      <InputMenu {...props} display={true} size="spt" depth={14} />,
+    );
+    expect(container.firstChild).toHaveStyle({
+      height: '36rem',
+    });
+  });
+  it('should render 0 layer height ', () => {
+    const { container } = renderTheme(
+      <InputMenu {...props} display={true} size="layer" layer={0} />,
+    );
+
+    expect(container.firstChild).toHaveStyle({
+      height: '3rem',
+    });
+  });
+  it('should render layer height ', () => {
+    const { container } = renderTheme(
+      <InputMenu {...props} display={true} size="layer" layer={5} />,
+    );
+
+    expect(container.firstChild).toHaveStyle({
+      height: '169rem',
     });
   });
 });

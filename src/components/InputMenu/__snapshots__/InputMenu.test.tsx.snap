@@ -32,6 +32,11 @@ exports[`<InputMenu /> should render no height and opacity 1`] = `
   display: flex;
 }
 
+.c0.zero {
+  height: 0px;
+  opacity: 0;
+}
+
 .c1 {
   width: 80%;
   -webkit-flex-direction: column;
@@ -182,11 +187,23 @@ exports[`<InputMenu /> should render no height and opacity 1`] = `
 }
 
 @media (min-width:768px) {
+  .c1 {
+    width: 90%;
+  }
+}
+
+@media (min-width:768px) {
   .c2 {
     -webkit-box-pack: space-around;
     -webkit-justify-content: space-around;
     -ms-flex-pack: space-around;
     justify-content: space-around;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 .control {
+    text-align: center;
   }
 }
 
@@ -199,10 +216,10 @@ exports[`<InputMenu /> should render no height and opacity 1`] = `
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: space-around;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: space-around;
-    justify-content: space-around;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .c4 .control {
@@ -225,7 +242,7 @@ exports[`<InputMenu /> should render no height and opacity 1`] = `
 <div>
   <div
     aria-label="InputMenu"
-    class="c0"
+    class="c0 false false"
   >
     <div
       class="c1"
@@ -235,16 +252,19 @@ exports[`<InputMenu /> should render no height and opacity 1`] = `
       >
         <a
           class="c3 selected"
+          id="Areia"
         >
           Areia
         </a>
         <a
           class="c3"
+          id="Silte"
         >
           Silte
         </a>
         <a
           class="c3"
+          id="Argila"
         >
           Argila
         </a>
@@ -260,9 +280,10 @@ exports[`<InputMenu /> should render no height and opacity 1`] = `
           >
             Areia Comum
             <input
-              checked=""
-              name="soil"
+              id="1"
+              name="soil 0"
               type="radio"
+              value="Areia Comum"
             />
             <div
               class="control_indicator"
@@ -273,8 +294,10 @@ exports[`<InputMenu /> should render no height and opacity 1`] = `
           >
             Areia Siltosa
             <input
-              name="soil"
+              id="2"
+              name="soil 0"
               type="radio"
+              value="Areia Siltosa"
             />
             <div
               class="control_indicator"
@@ -285,8 +308,10 @@ exports[`<InputMenu /> should render no height and opacity 1`] = `
           >
             Areia Siltoargilosa
             <input
-              name="soil"
+              id="3"
+              name="soil 0"
               type="radio"
+              value="Areia Siltoargilosa"
             />
             <div
               class="control_indicator"
@@ -297,8 +322,10 @@ exports[`<InputMenu /> should render no height and opacity 1`] = `
           >
             Areia Argilosa
             <input
-              name="soil"
+              id="4"
+              name="soil 0"
               type="radio"
+              value="Areia Argilosa"
             />
             <div
               class="control_indicator"
@@ -309,8 +336,10 @@ exports[`<InputMenu /> should render no height and opacity 1`] = `
           >
             Areia Argilossiltosa
             <input
-              name="soil"
+              id="5"
+              name="soil 0"
               type="radio"
+              value="Areia Argilossiltosa"
             />
             <div
               class="control_indicator"

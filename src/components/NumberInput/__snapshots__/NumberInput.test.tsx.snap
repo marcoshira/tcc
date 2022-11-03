@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NumberInput /> should render with default values and match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2.4rem;
+  position: relative;
+}
+
+.c0 span {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.c0 .unit {
+  color: gray;
+  position: absolute;
+  left: 97.5%;
+  text-align: right;
+}
+
+.c0 input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 17%;
+  font-size: 1.8rem;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.c0 input::-webkit-outer-spin-button,
+.c0 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c0 input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.c0.even input {
+  width: 55%;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding-right: 18px;
+    width: 33%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .unit {
+    left: 90%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 input {
+    width: 6.4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 input::-webkit-outer-spin-button,
+  .c0 input::-webkit-inner-spin-button {
+    margin-right: 5px;
+  }
+}
+
+<div>
+  <label
+    class="c0"
+  >
+    <span />
+    <input
+      name="price"
+      pattern="[0-9]+([.][0-9]+)?"
+      placeholder="0.00"
+      step="0.01"
+      title="This should be a number with up to 2 decimal places"
+      type="number"
+      value=""
+    />
+    <span
+      class="unit"
+    >
+      m
+    </span>
+  </label>
+</div>
+`;

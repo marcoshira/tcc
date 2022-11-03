@@ -30,9 +30,5 @@ export const Wrapper = styled.button`
       background: inherit;
       color: ${theme.colors.primaryColor};
     }
-
-    @media ${theme.media.gteMedium} {
-      /* width: 33%; */
-    }
   `}
 `;

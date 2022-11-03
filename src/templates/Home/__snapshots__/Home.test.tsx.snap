@@ -1,0 +1,1765 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> should match snapshot 1`] = `
+.c23 {
+  padding: 1.6rem 0.8rem;
+  color: #FFFFFF;
+  background: #0A1128;
+  border-radius: 7px;
+  box-shadow: 0px 1px 9px #0A1128;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.c23:disabled {
+  background: #DDDDDD;
+  color: #FFFFFF;
+  border: 2px solid #DDDDDD;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.c23:disabled:hover {
+  background: #DDDDDD;
+  color: #FFFFFF;
+  border: 2px solid #DDDDDD;
+  cursor: not-allowed;
+}
+
+.c23:hover {
+  cursor: pointer;
+  background: inherit;
+  color: #0A1128;
+}
+
+.c1 {
+  color: white;
+  margin: 0;
+  margin-bottom: 1.6rem;
+  padding: 3.2rem;
+  background: #0A1128;
+  text-align: center;
+  font-size: 5.6rem;
+  text-transform: none;
+}
+
+.c4 {
+  padding: 0px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 h2 {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 0px;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.c5 > div {
+  display: none;
+}
+
+.c5.open {
+  height: 24rem;
+  opacity: 1;
+}
+
+.c5.open > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5.zero {
+  height: 0px;
+  opacity: 0;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 0px;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.c8 > div {
+  display: none;
+}
+
+.c8.open {
+  height: 18rem;
+  opacity: 1;
+}
+
+.c8.open > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c8.zero {
+  height: 0px;
+  opacity: 0;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 0px;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.c14 > div {
+  display: none;
+}
+
+.c14.open {
+  height: 41rem;
+  opacity: 1;
+}
+
+.c14.open > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c14.zero {
+  height: 0px;
+  opacity: 0;
+}
+
+.c24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 0px;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.c24 > div {
+  display: none;
+}
+
+.c24.open {
+  height: 18rem;
+  opacity: 1;
+}
+
+.c24.open > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c24.zero {
+  height: 0px;
+  opacity: 0;
+}
+
+.c3 {
+  box-shadow: 0px 1px 9px #0A1128;
+  border-radius: 7px;
+  margin-bottom: 1.6rem;
+  width: 100%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.c3.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.c3.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  border: 2px solid red;
+  height: 3.2rem;
+  width: 100%;
+  bottom: 106%;
+  left: 50%;
+  margin-left: -50%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.c3.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.c3.tooltip .tooltiptext::after {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: red transparent transparent transparent;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2.4rem;
+  position: relative;
+}
+
+.c12 span {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.c12 .unit {
+  color: gray;
+  position: absolute;
+  left: 97.5%;
+  text-align: right;
+}
+
+.c12 input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 17%;
+  font-size: 1.8rem;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.c12 input::-webkit-outer-spin-button,
+.c12 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c12 input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.c12.even input {
+  width: 55%;
+}
+
+.c9 {
+  padding: 0 3.2rem 0 2.4rem;
+  margin: 0.8rem 0 2.4rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  width: 100%;
+}
+
+.c10 .c11 {
+  width: 100%;
+}
+
+.c10 .c11 .unit {
+  left: 98%;
+  top: 10px;
+  width: auto;
+}
+
+.c10 .c11 span {
+  width: 60%;
+}
+
+.c10 .c11 input {
+  width: 23%;
+  height: 23px;
+  margin-top: 10px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+}
+
+.c13 .control-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.c13 .control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.c13 .control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.c13 .control_indicator {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  height: 10px;
+  width: 10px;
+  background: #e6e6e7;
+  border: 0px solid #000000;
+}
+
+.c13 .control:hover input ~ .control_indicator,
+.c13 .control input:focus ~ .control_indicator {
+  background: #cccccc;
+}
+
+.c13 .control input:checked ~ .control_indicator {
+  background: #0a1128;
+}
+
+.c13 .control:hover input:not([disabled]):checked ~ .control_indicator,
+.c13 .control input:checked:focus ~ .control_indicator {
+  background: #0a1128;
+}
+
+.c13 .control input:disabled ~ .control_indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.c13 .control_indicator:after {
+  box-sizing: unset;
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.c13 .control input:checked ~ .control_indicator:after {
+  display: block;
+}
+
+.c13 .control-radio .control_indicator {
+  border-radius: 50%;
+}
+
+.c13 .control-radio .control_indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  background: #0a1128;
+  -webkit-transition: background 250ms;
+  transition: background 250ms;
+}
+
+.c13 .control-radio input:disabled ~ .control_indicator:after {
+  background: #7b7b7b;
+}
+
+.c13 span {
+  display: none;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 5rem;
+  height: 100%;
+}
+
+.c15 .c22 {
+  color: #0A1128;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  margin-top: 0px;
+  position: relative;
+  padding: 0.8rem;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.c15 .c22:hover {
+  color: rgb(230,159,28);
+}
+
+.c15 .c22::after {
+  content: '';
+  position: absolute;
+  bottom: 0.2rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background: rgb(230,159,28);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.c15 .c22:hover::after {
+  left: 25%;
+  width: 50%;
+}
+
+.c15 .c22:disabled {
+  color: #DDDDDD;
+  background: transparent;
+  border: none;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.c15 .c22:disabled:hover {
+  color: #DDDDDD;
+  background: transparent;
+  cursor: not-allowed;
+}
+
+.c15 .c22:disabled::after {
+  content: none;
+}
+
+.c16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.c16 svg {
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: #0A1128;
+  font-weight: 200;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  display: none;
+}
+
+.c16 svg:hover {
+  color: rgb(230,159,28);
+  cursor: pointer;
+}
+
+.c16:last-of-type svg {
+  display: block;
+}
+
+.c16 p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.c16 p.disclaimer {
+  color: grey;
+  font-size: 1.6rem;
+  margin-top: 0;
+}
+
+.c16 .c11 {
+  width: 80%;
+}
+
+.c16 .c11 input {
+  width: 28%;
+  margin-right: 22px;
+}
+
+.c16 .c11 .unit {
+  left: 93%;
+}
+
+.c17 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c18 {
+  width: 80%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c19 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c20 {
+  color: #0A1128;
+  font-size: 2rem;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c20.selected {
+  color: rgb(207,207,45);
+}
+
+.c20:hover {
+  color: rgb(230,159,28);
+  cursor: pointer;
+}
+
+.c21 {
+  margin: 2.4rem 0;
+}
+
+.c21 .control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.c21 .control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.c21 .control_indicator {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  height: 10px;
+  width: 10px;
+  background: #e6e6e7;
+  border: 0px solid #000000;
+}
+
+.c21 .control:hover input ~ .control_indicator,
+.c21 .control input:focus ~ .control_indicator {
+  background: #cccccc;
+}
+
+.c21 .control input:checked ~ .control_indicator {
+  background: #0a1128;
+}
+
+.c21 .control:hover input:not([disabled]):checked ~ .control_indicator,
+.c21 .control input:checked:focus ~ .control_indicator {
+  background: #0a1128;
+}
+
+.c21 .control input:disabled ~ .control_indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.c21 .control_indicator:after {
+  box-sizing: unset;
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.c21 .control input:checked ~ .control_indicator:after {
+  display: block;
+}
+
+.c21 .control-radio .control_indicator {
+  border-radius: 50%;
+}
+
+.c21 .control-radio .control_indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  background: #0a1128;
+  -webkit-transition: background 250ms;
+  transition: background 250ms;
+}
+
+.c21 .control-radio input:disabled ~ .control_indicator:after {
+  background: #7b7b7b;
+}
+
+.c6 {
+  padding-bottom: 3.2rem;
+  width: 80%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c7 {
+  margin: 2.4rem 0;
+}
+
+.c7 .control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.c7 .control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.c7 .control_indicator {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  height: 10px;
+  width: 10px;
+  background: #e6e6e7;
+  border: 0px solid #000000;
+}
+
+.c7 .control:hover input ~ .control_indicator,
+.c7 .control input:focus ~ .control_indicator {
+  background: #cccccc;
+}
+
+.c7 .control input:checked ~ .control_indicator {
+  background: #0a1128;
+}
+
+.c7 .control:hover input:not([disabled]):checked ~ .control_indicator,
+.c7 .control input:checked:focus ~ .control_indicator {
+  background: #0a1128;
+}
+
+.c7 .control input:disabled ~ .control_indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.c7 .control_indicator:after {
+  box-sizing: unset;
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.c7 .control input:checked ~ .control_indicator:after {
+  display: block;
+}
+
+.c7 .control-radio .control_indicator {
+  border-radius: 50%;
+}
+
+.c7 .control-radio .control_indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  background: #0a1128;
+  -webkit-transition: background 250ms;
+  transition: background 250ms;
+}
+
+.c7 .control-radio input:disabled ~ .control_indicator:after {
+  background: #7b7b7b;
+}
+
+.c25 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.c26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.c27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.c27 .c11 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.c27 .c11 input {
+  width: 25%;
+}
+
+.c2 {
+  width: 92%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+}
+
+.c0 {
+  margin-bottom: 3.2rem;
+}
+
+@media (max-width:768px) {
+  .c1 {
+    font-size: 4.0rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding-bottom: 2.4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5.open {
+    height: 12rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    height: 24rem;
+    opacity: 1;
+  }
+
+  .c5 > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width:768px) {
+  .c8.open {
+    height: 12rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    height: 18rem;
+    opacity: 1;
+  }
+
+  .c8 > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width:768px) {
+  .c14.open {
+    height: 30rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c14 {
+    height: 41rem;
+    opacity: 1;
+  }
+
+  .c14 > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width:768px) {
+  .c24.open {
+    height: 6rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c24 {
+    height: 18rem;
+    opacity: 1;
+  }
+
+  .c24 > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    padding-right: 18px;
+    width: 33%;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 .unit {
+    left: 90%;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 input {
+    width: 6.4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 input::-webkit-outer-spin-button,
+  .c12 input::-webkit-inner-spin-button {
+    margin-right: 5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .c10 .c11 {
+    width: 50%;
+  }
+
+  .c10 .c11 .unit {
+    left: 94%;
+    top: 0px;
+    width: auto;
+  }
+
+  .c10 .c11 span {
+    width: 70%;
+    font-size: 2rem;
+  }
+
+  .c10 .c11 input {
+    width: 23%;
+    height: 23px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c13 {
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-bottom: 1.6rem;
+  }
+
+  .c13 span {
+    display: inline;
+    font-size: 2rem;
+  }
+
+  .c13 .control-group {
+    width: 60%;
+  }
+
+  .c13 .control {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    width: 85%;
+  }
+
+  .c15 .c22 {
+    width: 30%;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
+    border-bottom: 2px dotted #0A1128;
+  }
+
+  .c16 svg {
+    height: 35px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    color: #0A1128;
+    font-weight: 200;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+  }
+
+  .c16 svg:hover {
+    color: rgb(230,159,28);
+    cursor: pointer;
+  }
+
+  .c16:last-of-type {
+    border-bottom: none;
+  }
+
+  .c16 .c11 {
+    width: 60%;
+  }
+
+  .c16 .c11 input {
+    width: 28%;
+    margin-right: 22px;
+  }
+
+  .c16 .c11 .unit {
+    left: 93%;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
+    width: 90%;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 .control {
+    text-align: center;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 .control-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .c21 .control {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    position: relative;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 .control-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .c7 .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+  }
+
+  .c7 .control {
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    margin: 0.8rem 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c26 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  .c27 {
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 60%;
+    margin-top: 5.6rem;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+    id="Home"
+  >
+    <h1
+      class="c1"
+    >
+      Estaca Web
+    </h1>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3 tooltip"
+      >
+        <div
+          class="c4"
+        >
+          <h2>
+            Tipo de Estaca
+          </h2>
+        </div>
+        <div
+          aria-label="InputMenu"
+          class="c5 false false"
+        >
+          <div
+            class="c6"
+          >
+            <div
+              class="c7"
+            >
+              <div
+                class="control-group"
+              >
+                <div
+                  class="flex"
+                >
+                  <label
+                    class="control control-radio"
+                  >
+                    Escavada em geral
+                    <input
+                      name="stake"
+                      type="radio"
+                    />
+                    <div
+                      class="control_indicator"
+                    />
+                  </label>
+                  <label
+                    class="control control-radio"
+                  >
+                    Escavada (bentonita)
+                    <input
+                      name="stake"
+                      type="radio"
+                    />
+                    <div
+                      class="control_indicator"
+                    />
+                  </label>
+                </div>
+                <div
+                  class="flex"
+                >
+                  <label
+                    class="control control-radio"
+                  >
+                    Hélice contínua
+                    <input
+                      name="stake"
+                      type="radio"
+                    />
+                    <div
+                      class="control_indicator"
+                    />
+                  </label>
+                  <label
+                    class="control control-radio"
+                  >
+                    Raiz
+                    <input
+                      name="stake"
+                      type="radio"
+                    />
+                    <div
+                      class="control_indicator"
+                    />
+                  </label>
+                </div>
+                <div
+                  class="flex"
+                >
+                  <label
+                    class="control control-radio"
+                  >
+                    Injetada sob altas pressões
+                    <input
+                      name="stake"
+                      type="radio"
+                    />
+                    <div
+                      class="control_indicator"
+                    />
+                  </label>
+                  <label
+                    class="control control-radio"
+                  >
+                    Franki
+                    <input
+                      name="stake"
+                      type="radio"
+                    />
+                    <div
+                      class="control_indicator"
+                    />
+                  </label>
+                </div>
+                <div
+                  class="flex"
+                >
+                  <label
+                    class="control control-radio"
+                  >
+                    Metálica
+                    <input
+                      name="stake"
+                      type="radio"
+                    />
+                    <div
+                      class="control_indicator"
+                    />
+                  </label>
+                  <label
+                    class="control control-radio"
+                  >
+                    Pré-moldada
+                    <input
+                      name="stake"
+                      type="radio"
+                    />
+                    <div
+                      class="control_indicator"
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c3 tooltip"
+      >
+        <div
+          class="c4"
+        >
+          <h2>
+            Dimensões da Estaca
+          </h2>
+        </div>
+        <div
+          aria-label="InputMenu"
+          class="c8 false false"
+        >
+          <div
+            class="c9"
+          >
+            <div
+              class="c10"
+            >
+              <label
+                class="c11 c12"
+              >
+                <span>
+                  Diâmetro / Lado da Estaca
+                </span>
+                <input
+                  name="price"
+                  pattern="[0-9]+([.][0-9]+)?"
+                  placeholder="0.00"
+                  step="0.01"
+                  title="This should be a number with up to 2 decimal places"
+                  type="number"
+                  value=""
+                />
+                <span
+                  class="unit"
+                >
+                  m
+                </span>
+              </label>
+              <label
+                class="c11 c12"
+              >
+                <span>
+                  Profundidade do Fuste
+                </span>
+                <input
+                  name="price"
+                  pattern="[0-9]+([.][0-9]+)?"
+                  placeholder="0.00"
+                  step="0.01"
+                  title="This should be a number with up to 2 decimal places"
+                  type="number"
+                  value=""
+                />
+                <span
+                  class="unit"
+                >
+                  m
+                </span>
+              </label>
+            </div>
+            <div
+              class="c13"
+            >
+              <span>
+                Formato da Estaca:
+              </span>
+              <div
+                class="control-group"
+              >
+                <label
+                  class="control control-radio"
+                >
+                  Circunferência
+                  <input
+                    checked=""
+                    name="shape"
+                    type="radio"
+                    value="circ"
+                  />
+                  <div
+                    class="control_indicator"
+                  />
+                </label>
+                <label
+                  class="control control-radio"
+                >
+                  Quadrado
+                  <input
+                    name="shape"
+                    type="radio"
+                    value="quad"
+                  />
+                  <div
+                    class="control_indicator"
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c3 tooltip"
+      >
+        <div
+          class="c4"
+        >
+          <h2>
+            Tipos de Solo
+          </h2>
+        </div>
+        <div
+          aria-label="InputMenu"
+          class="c14 false false"
+        >
+          <div
+            class="c15"
+          >
+            <div
+              class="c16"
+            >
+              <svg
+                aria-hidden="true"
+                aria-label="CloseLayer"
+                class="c17"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 50 50"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m37.304 11.282 1.414 1.414-26.022 26.02-1.414-1.413z"
+                />
+                <path
+                  d="m12.696 11.282 26.022 26.02-1.414 1.415-26.022-26.02z"
+                />
+              </svg>
+              <p>
+                Camada 1
+              </p>
+              <p
+                class="disclaimer"
+              >
+                *Desconsidere o primeiro metro da primeira camada
+              </p>
+              <label
+                class="c11 c12"
+              >
+                <span>
+                  Profundidade: 
+                </span>
+                <input
+                  name="price"
+                  pattern="[0-9]+([.][0-9]+)?"
+                  placeholder="0"
+                  step="0.01"
+                  title="This should be a number with up to 2 decimal places"
+                  type="number"
+                  value=""
+                />
+                <span
+                  class="unit"
+                >
+                  m
+                </span>
+              </label>
+              <div
+                class="c18"
+              >
+                <div
+                  class="c19"
+                >
+                  <a
+                    class="c20 selected"
+                    id="Areia"
+                  >
+                    Areia
+                  </a>
+                  <a
+                    class="c20"
+                    id="Silte"
+                  >
+                    Silte
+                  </a>
+                  <a
+                    class="c20"
+                    id="Argila"
+                  >
+                    Argila
+                  </a>
+                </div>
+                <div
+                  class="c21"
+                >
+                  <div
+                    class="control-group"
+                  >
+                    <label
+                      class="control control-radio"
+                    >
+                      Areia Comum
+                      <input
+                        id="1"
+                        name="soil 0"
+                        type="radio"
+                        value="Areia Comum"
+                      />
+                      <div
+                        class="control_indicator"
+                      />
+                    </label>
+                    <label
+                      class="control control-radio"
+                    >
+                      Areia Siltosa
+                      <input
+                        id="2"
+                        name="soil 0"
+                        type="radio"
+                        value="Areia Siltosa"
+                      />
+                      <div
+                        class="control_indicator"
+                      />
+                    </label>
+                    <label
+                      class="control control-radio"
+                    >
+                      Areia Siltoargilosa
+                      <input
+                        id="3"
+                        name="soil 0"
+                        type="radio"
+                        value="Areia Siltoargilosa"
+                      />
+                      <div
+                        class="control_indicator"
+                      />
+                    </label>
+                    <label
+                      class="control control-radio"
+                    >
+                      Areia Argilosa
+                      <input
+                        id="4"
+                        name="soil 0"
+                        type="radio"
+                        value="Areia Argilosa"
+                      />
+                      <div
+                        class="control_indicator"
+                      />
+                    </label>
+                    <label
+                      class="control control-radio"
+                    >
+                      Areia Argilossiltosa
+                      <input
+                        id="5"
+                        name="soil 0"
+                        type="radio"
+                        value="Areia Argilossiltosa"
+                      />
+                      <div
+                        class="control_indicator"
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="c22 c23"
+            >
+              Adicionar Camada
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c3 tooltip"
+      >
+        <div
+          class="c4"
+        >
+          <h2>
+            Dados de SPT
+          </h2>
+        </div>
+        <div
+          aria-label="InputMenu"
+          class="c24 false zero"
+        >
+          <div
+            class="c25"
+          >
+            <div
+              class="c26"
+            >
+              <div
+                class="c27"
+              >
+                <label
+                  class="c11 c12"
+                >
+                  <span>
+                    Nspt a 1m: 
+                  </span>
+                  <input
+                    name="price"
+                    pattern="[0-9]+([.][0-9]+)?"
+                    placeholder="0"
+                    step="0.01"
+                    title="This should be a number with up to 2 decimal places"
+                    type="number"
+                    value=""
+                  />
+                  <span
+                    class="unit"
+                  />
+                </label>
+              </div>
+              <div
+                class="c27"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="c22 c23"
+        disabled=""
+      >
+        Calcular
+      </button>
+    </div>
+  </div>
+</div>
+`;

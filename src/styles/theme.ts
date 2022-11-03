@@ -53,6 +53,7 @@ export const theme = {
     xhuge: '6.4rem',
   },
   frameSizes: {
+    xtiny: '3rem',
     tiny: '8rem',
     xxsmall: '12rem',
     ltxsmall: '15rem',
@@ -63,6 +64,7 @@ export const theme = {
     smallMedium: '32rem',
     ltmedium: '36rem',
     medium: '40rem',
+    gtmedium: '48rem',
     largeMedium: '56rem',
     large: '64rem',
     xlarge: '80rem',

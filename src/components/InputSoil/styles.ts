@@ -56,6 +56,10 @@ export const SubTypeContainer = styled.div`
       padding-top: 3px;
       cursor: pointer;
       font-size: ${theme.font.sizes.small};
+
+      @media ${theme.media.gteMedium} {
+        text-align: center;
+      }
     }
     .control input {
       position: absolute;
@@ -118,7 +122,7 @@ export const SubTypeContainer = styled.div`
       .control-group {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
       }
 
       .control {

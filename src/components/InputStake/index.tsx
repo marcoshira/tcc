@@ -11,6 +11,7 @@ export const InputStake = ({
   reference = null,
 }: InputStakeProps) => {
   const handleChange = (value: number) => {
+    /* istanbul ignore else */
     if (onFormChangeStake) {
       onFormChangeStake(value);
     }
@@ -31,7 +32,7 @@ export const InputStake = ({
               <div className="control_indicator"></div>
             </label>
             <label className="control control-radio">
-              Escavada bentonita
+              Escavada (bentonita)
               <input
                 type="radio"
                 name="stake"

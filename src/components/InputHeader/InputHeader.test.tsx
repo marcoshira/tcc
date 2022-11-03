@@ -10,13 +10,13 @@ const props: InputHeaderProps = {
 };
 
 describe('<InputHeader />', () => {
-  it('should call a function onCLick', async () => {
+  it('should call a function onCLick', () => {
     const { container } = renderTheme(<InputHeader {...props} />);
 
     expect(screen.getByRole('heading', { name: 'test' })).toBeInTheDocument();
 
     fireEvent.click(container.firstChild);
-    await waitFor(() => {
+    waitFor(() => {
       expect(func).toHaveBeenCalled();
     });
   });

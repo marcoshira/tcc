@@ -15,7 +15,7 @@ describe('<Button />', () => {
 
     expect(screen.getByRole('button', { name: 'Button' })).toHaveStyleRule(
       'background',
-      'inherit',
+      theme.colors.primaryColor,
     );
   });
 
