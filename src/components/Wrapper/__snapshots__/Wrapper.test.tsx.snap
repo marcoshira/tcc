@@ -23,6 +23,13 @@ exports[`<Wrapper /> should render 1`] = `
 
 @media (min-width:768px) {
   .c0 {
+    width: 85%;
+    margin-top: 5.6rem;
+  }
+}
+
+@media (min-width:1336px) {
+  .c0 {
     width: 60%;
     margin-top: 5.6rem;
   }

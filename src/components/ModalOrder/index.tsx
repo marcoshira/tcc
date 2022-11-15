@@ -76,6 +76,11 @@ export const ModalOrder = ({
           <p>{`Capacidade de carga: ${data.AokiRTotal} kN`}</p>
           <p>{`Carga admissível: ${data.AokiRAdm} kN`}</p>
         </Styled.ContentWrapper>
+        <Styled.Disclaimer>
+          *Os resultados para carga admissível são os menores dentre aqueles
+          obtidos através do próprio método, da Norma ABNT NBR 6122 e da
+          limitação de estacas escavadas.
+        </Styled.Disclaimer>
       </Styled.Wrapper>
     </Modal>
   );

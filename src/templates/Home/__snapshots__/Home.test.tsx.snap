@@ -1117,6 +1117,12 @@ exports[`<Home /> should match snapshot 1`] = `
   }
 }
 
+@media (min-width:1336px) {
+  .c15 .c22 {
+    width: 30%;
+  }
+}
+
 @media (min-width:768px) {
   .c16 {
     border-bottom: 2px dotted #0A1128;
@@ -1262,6 +1268,13 @@ exports[`<Home /> should match snapshot 1`] = `
 }
 
 @media (min-width:768px) {
+  .c2 {
+    width: 85%;
+    margin-top: 5.6rem;
+  }
+}
+
+@media (min-width:1336px) {
   .c2 {
     width: 60%;
     margin-top: 5.6rem;

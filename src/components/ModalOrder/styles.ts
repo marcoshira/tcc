@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
       padding: ${theme.spacings.xlarge} ${theme.spacings.medium};
       height: auto;
       width: auto;
+      margin-bottom: ${theme.spacings.huge};
     }
   `}
 `;
@@ -24,8 +25,7 @@ export const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: ${theme.spacings.large};
-
+    margin-bottom: 0;
     ${Title} {
       padding: 0;
       margin: ${theme.spacings.small};
@@ -82,6 +82,20 @@ export const Button = styled.button`
       > svg {
         border: 2px solid ${theme.colors.white};
       }
+    }
+  `}
+`;
+
+export const Disclaimer = styled.p`
+  ${({ theme }) => css`
+    color: grey;
+    text-align: center;
+    margin-top: 0;
+
+    @media ${theme.media.gteMedium} {
+      position: absolute;
+      bottom: 2px;
+      width: 80%;
     }
   `}
 `;

@@ -63,5 +63,11 @@ export const Wrapper = styled.div`
         width: 30%;
       }
     }
+
+    @media ${theme.media.gteBig} {
+      ${Button} {
+        width: 30%;
+      }
+    }
   `}
 `;

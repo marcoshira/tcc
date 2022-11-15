@@ -36,6 +36,8 @@ export const theme = {
     },
   },
   media: {
+    lteBig: '(max-width: 1336px)',
+    gteBig: '(min-width: 1336px)',
     lteMedium: '(max-width: 768px)',
     gteMedium: '(min-width: 768px)',
     lteSmall: '(max-width: 440px)',

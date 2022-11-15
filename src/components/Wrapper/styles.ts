@@ -11,6 +11,10 @@ export const Wrapper = styled.div`
     transform: translate(-50%, 0);
 
     @media ${theme.media.gteMedium} {
+      width: 85%;
+      margin-top: ${theme.spacings.huge};
+    }
+    @media ${theme.media.gteBig} {
       width: 60%;
       margin-top: ${theme.spacings.huge};
     }
