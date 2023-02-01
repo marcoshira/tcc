@@ -13,36 +13,26 @@ export const InputStake = ({ onFormChangeStake = null }: InputStakeProps) => {
   };
 
   return (
-    <Styled.Wrapper>
+    <Styled.WrapperPile>
       <Styled.SubTypeContainer>
         <div className="control-group">
           <div className="flex">
             <label className="control control-radio">
-              Escavada em geral
+              Franki
               <input
                 type="radio"
                 name="stake"
-                onClick={() => handleChange(1)}
+                onClick={() => handleChange(6)}
               />
               <div className="control_indicator"></div>
             </label>
+
             <label className="control control-radio">
               Escavada (bentonita)
               <input
                 type="radio"
                 name="stake"
                 onClick={() => handleChange(2)}
-              />
-              <div className="control_indicator"></div>
-            </label>
-          </div>
-          <div className="flex">
-            <label className="control control-radio">
-              Hélice contínua
-              <input
-                type="radio"
-                name="stake"
-                onClick={() => handleChange(3)}
               />
               <div className="control_indicator"></div>
             </label>
@@ -55,9 +45,28 @@ export const InputStake = ({ onFormChangeStake = null }: InputStakeProps) => {
               />
               <div className="control_indicator"></div>
             </label>
+
+            <label className="control control-radio">
+              Hélice contínua
+              <input
+                type="radio"
+                name="stake"
+                onClick={() => handleChange(3)}
+              />
+              <div className="control_indicator"></div>
+            </label>
           </div>
 
           <div className="flex">
+            <label className="control control-radio">
+              Escavada em geral
+              <input
+                type="radio"
+                name="stake"
+                onClick={() => handleChange(1)}
+              />
+              <div className="control_indicator"></div>
+            </label>
             <label className="control control-radio">
               Injetada sob altas pressões
               <input
@@ -67,18 +76,8 @@ export const InputStake = ({ onFormChangeStake = null }: InputStakeProps) => {
               />
               <div className="control_indicator"></div>
             </label>
-            <label className="control control-radio">
-              Franki
-              <input
-                type="radio"
-                name="stake"
-                onClick={() => handleChange(6)}
-              />
-              <div className="control_indicator"></div>
-            </label>
-          </div>
-          <div className="flex">
-            <label className="control control-radio">
+
+            {/* <label className="control control-radio">
               Metálica
               <input
                 type="radio"
@@ -86,9 +85,9 @@ export const InputStake = ({ onFormChangeStake = null }: InputStakeProps) => {
                 onClick={() => handleChange(7)}
               />
               <div className="control_indicator"></div>
-            </label>
+            </label> */}
             <label className="control control-radio">
-              Pré-moldada
+              Pré-moldada de concreto
               <input
                 type="radio"
                 name="stake"
@@ -99,6 +98,6 @@ export const InputStake = ({ onFormChangeStake = null }: InputStakeProps) => {
           </div>
         </div>
       </Styled.SubTypeContainer>
-    </Styled.Wrapper>
+    </Styled.WrapperPile>
   );
 };

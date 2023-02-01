@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components';
 
-export const Wrapper = styled.div`
+export const WrapperPile = styled.div`
   ${({ theme }) => css`
     padding-bottom: ${theme.spacings.large};
-    width: 80%;
+    width: 90%;
     flex-direction: column;
     justify-content: center;
   `}
@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 
 export const SubTypeContainer = styled.div`
   ${({ theme }) => css`
-    margin: ${theme.spacings.medium} 0;
+    margin-bottom: ${theme.spacings.small};
 
     .control {
       display: flex;
@@ -21,7 +21,7 @@ export const SubTypeContainer = styled.div`
       margin-bottom: 5px;
       padding-top: 3px;
       cursor: pointer;
-      font-size: ${theme.font.sizes.small};
+      font-size: ${theme.font.sizes.gtsmall};
     }
     .control input {
       position: absolute;
@@ -83,13 +83,13 @@ export const SubTypeContainer = styled.div`
     @media ${theme.media.gteMedium} {
       .control-group {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
       }
 
       .flex {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
       }
 

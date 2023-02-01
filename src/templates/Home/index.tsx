@@ -64,6 +64,18 @@ export function Home({ modalElement = null }: HomeProps) {
 
   const handleComp = (comp) => {
     setFormComp(comp);
+
+    Object.keys(formSPT).forEach((val) => {
+      if (+val > +comp + 1) {
+        delete formSPT[val];
+      }
+    });
+
+    setDisabledSPT(
+      Object.values(formSPT).length <= +comp ||
+        Object.values(formSPT).includes('0') ||
+        Object.values(formSPT).includes(''),
+    );
   };
 
   const handleShape = (shape) => {
@@ -78,6 +90,10 @@ export function Home({ modalElement = null }: HomeProps) {
         Object.values(formSPT).includes('0') ||
         Object.values(formSPT).includes(''),
     );
+
+    if (+nspt < 0) {
+      setDisabledSPT(true);
+    }
   };
 
   const handleLayerSoil = (soil, index) => {
@@ -110,6 +126,12 @@ export function Home({ modalElement = null }: HomeProps) {
   };
 
   const handleCloseLayer = () => {
+    setDepthSum(
+      Object.values(depthSoilLayer).reduce(
+        (partialSum, a) => +partialSum - +a,
+        0,
+      ) as number,
+    );
     delete formSoil[formLayer - 1];
     delete depthSoilLayer[formLayer - 1];
     delete soilLayer[formLayer - 1];
@@ -118,6 +140,7 @@ export function Home({ modalElement = null }: HomeProps) {
   };
 
   const handleClick = () => {
+    console.log(depthSum);
     const DecData = DecourtQuaresma(
       formSoil,
       formStake,
