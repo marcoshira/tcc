@@ -22,6 +22,69 @@ export const Wrapper = styled.div<BorderRed>`
       margin-bottom: ${theme.spacings.large};
     }
 
+    > div {
+      svg {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 32px;
+        color: ${theme.colors.primaryColor};
+      }
+      &:hover {
+        svg {
+          color: ${theme.colors.orange};
+        }
+
+        & .tooltiptext2 {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    & .tooltiptext2 {
+      visibility: hidden;
+      width: 120px;
+      background-color: transparent;
+      color: gray;
+      text-align: center;
+      padding: 15px;
+      border-radius: 6px;
+      border: 1px solid gray;
+      /* height: 100%; */
+      width: ${theme.frameSizes.small};
+      top: 0px;
+      left: 101.5%;
+
+      position: absolute;
+      z-index: 1;
+
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      text-align: center;
+    }
+    & .tooltiptext2::before {
+      content: ' ';
+      position: absolute;
+      top: 26px;
+      right: 100%;
+      margin-top: -10px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent gray transparent transparent;
+    }
+    & .tooltiptext2::after {
+      content: ' ';
+      position: absolute;
+      top: 26px;
+      right: 99.6%;
+      margin-top: -10px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent white transparent transparent;
+    }
+
     /* Tooltip container */
     &.tooltip {
       position: relative;

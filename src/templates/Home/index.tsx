@@ -194,6 +194,7 @@ export function Home({ modalElement = null }: HomeProps) {
           frameSize="mediumSmall"
           red={!formStake}
           errorMessage={'Dados incompletos'}
+          instruction="Informe qual tipo de estaca está utilizando."
         >
           <InputStake onFormChangeStake={handleStake} />
         </InputContainer>
@@ -204,6 +205,7 @@ export function Home({ modalElement = null }: HomeProps) {
           errorMessage={
             'Dados incompletos ou Comprimento do Fuste maior ou igual a soma das Profundidades das Camadas'
           }
+          instruction="Informe o comprimento do fuste e o diâmetro ou lado da estaca em metros e seu formato (circular ou quadrado)."
         >
           <InputDim
             onFormChangeArea={handleArea}
@@ -219,6 +221,7 @@ export function Home({ modalElement = null }: HomeProps) {
           errorMessage={
             'Dados incompletos ou Comprimento do Fuste maior ou igual a soma das Profundidades das Camadas'
           }
+          instruction="Desconsiderando apenas o primeiro metro da primeira camada de solo, informe qual tipo de solo de cada camada, além de sua profundidade."
         >
           <InputSoilLayer
             onAddLayer={handleLayer}
@@ -234,6 +237,7 @@ export function Home({ modalElement = null }: HomeProps) {
           depth={+formComp}
           red={disabledSPT}
           errorMessage={'Dados incompletos'}
+          instruction="Após informar o comprimento do fuste, informe os valores de Nspt de cada metro até aquele imediatamente abaixo da ponta da estaca."
         >
           <NsptInput depth={+formComp} onSPTFormChange={handleSpt} />
         </InputContainer>
