@@ -187,7 +187,7 @@ export function Home({ modalElement = null }: HomeProps) {
 
   return (
     <Styled.Wrapper id="Home">
-      <Heading>Estaca Web</Heading>
+      <Heading caption="Marcos Hirazawa">Estaca Web</Heading>
       <Wrapper>
         <InputContainer
           title="Tipo de Estaca"

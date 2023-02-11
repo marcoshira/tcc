@@ -127,8 +127,8 @@ export const Wrapper = styled.div<BorderRed>`
       position: absolute;
       top: 100%; /* At the bottom of the tooltip */
       left: 50%;
-      margin-left: -5px;
-      border-width: 5px;
+      margin-left: -9px;
+      border-width: 9px;
       border-style: solid;
       border-color: red transparent transparent transparent;
     }

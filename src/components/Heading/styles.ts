@@ -37,5 +37,11 @@ export const Title = styled.h1<HeadingProps>`
     text-align: center;
     ${titleSize[size](theme)};
     ${titleCase(uppercase)};
+
+    p {
+      font-size: ${theme.font.sizes.gtsmall};
+      margin-bottom: 0;
+      font-weight: 400;
+    }
   `}
 `;
