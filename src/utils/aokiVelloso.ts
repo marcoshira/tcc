@@ -27,15 +27,25 @@ export function AokiVelloso(
   //Descarta-se o valor abaixo da ponta da estaca (útil para Décourt-Quaresma)
   sptVal.pop();
 
-  soilVal.map((soil, index) => {
-    sum = sum + +soil.depthSoil;
+  // soilVal.map((soil, index) => {
+  //   sum = sum + +soil.depthSoil;
 
-    if (sum > +comp) {
-      lastSoil = soil.soil;
-      lastSoilIndex = index;
-      return;
+  //   if (sum >= +comp) {
+  //     lastSoil = soil.soil;
+  //     lastSoilIndex = index;
+  //     return;
+  //   }
+  // });
+
+  for (let i = 0; i < soilVal.length; i++) {
+    sum = sum + +soilVal[i].depthSoil;
+
+    if (sum >= +comp) {
+      lastSoil = soilVal[i].soil;
+      lastSoilIndex = i;
+      break;
     }
-  });
+  }
 
   //Cálculo do perímetro e área
   const peri = shape === 1 ? Math.PI * +area : 4 * +area;
@@ -211,6 +221,7 @@ export function AokiVelloso(
         length++;
       }
       val.map((nspt) => {
+        // sptSum += +nspt;
         if (stake === 1) {
           if (+nspt < 3) {
             sptSum += 3;

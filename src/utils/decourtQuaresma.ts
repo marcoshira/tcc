@@ -161,6 +161,7 @@ export function DecourtQuaresma(
         length++;
       }
       val.map((nspt) => {
+        // sptSum += +nspt;
         if (stake === 1) {
           if (+nspt < 3) {
             sptSum += 3;
