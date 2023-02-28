@@ -1,3 +1,4 @@
+import { Question } from '@styled-icons/evil';
 import { NumberInput } from '../NumberInput';
 import * as Styled from './styles';
 
@@ -9,8 +10,17 @@ export const NsptInput = ({
   depth = 0,
   onSPTFormChange = null,
 }: NsptInputProps) => {
+  const svgLeft =
+    depth % 4 == 0
+      ? '19%'
+      : depth % 4 == 1
+      ? '44.5%'
+      : depth % 4 == 2
+      ? '69%'
+      : '94%';
+
   return (
-    <Styled.Wrapper>
+    <Styled.Wrapper svgLeft={svgLeft}>
       {[...Array(Math.floor(depth / 4) + 1)].map((el, index) => (
         <Styled.NsptContainer key={index}>
           <Styled.NsptContainerMob>
@@ -51,6 +61,13 @@ export const NsptInput = ({
           </Styled.NsptContainerMob>
         </Styled.NsptContainer>
       ))}
+      <div className="tooltip3">
+        <Question />
+        <span className="tooltiptext3">
+          Caso a estaca esteja apoiada em uma camada de rochas, duplique o
+          último valor ou considere um valor alto (Ex: 50).
+        </span>
+      </div>
     </Styled.Wrapper>
   );
 };

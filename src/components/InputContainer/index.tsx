@@ -18,8 +18,10 @@ export type InputContainerProps = {
   depth?: number;
   layer?: number;
   red?: boolean;
+  yellow?: boolean;
   errorMessage?: string;
   instruction?: string;
+  alert?: string;
 };
 export const InputContainer = ({
   children,
@@ -28,8 +30,10 @@ export const InputContainer = ({
   depth = null,
   layer = null,
   red = false,
+  yellow = false,
   errorMessage = '',
   instruction = 'Coloque os dados necessários.',
+  alert = 'Confira seus dados.',
 }: InputContainerProps) => {
   const [display, setDisplay] = useState(false);
   const [touched, setTouched] = useState(false);
@@ -41,6 +45,7 @@ export const InputContainer = ({
   return (
     <Styled.Wrapper
       red={red && touched}
+      yellow={yellow}
       onBlur={() => setTouched(true)}
       className="tooltip"
     >
@@ -49,6 +54,7 @@ export const InputContainer = ({
         <span className="tooltiptext2">{instruction}</span>
       </div>
       {red && touched && <span className="tooltiptext">{errorMessage}</span>}
+      {yellow && <span className="tooltiptext4">{alert}</span>}
       <InputHeader title={title} onClick={handleDisplay} />
       <InputMenu display={display} size={frameSize} depth={depth} layer={layer}>
         {children}
