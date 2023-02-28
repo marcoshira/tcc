@@ -11,17 +11,17 @@ export const NsptInput = ({
   onSPTFormChange = null,
 }: NsptInputProps) => {
   const svgLeft =
-    depth % 4 == 0
+    Math.ceil(depth) % 4 == 0
       ? '19%'
-      : depth % 4 == 1
+      : Math.ceil(depth) % 4 == 1
       ? '44.5%'
-      : depth % 4 == 2
+      : Math.ceil(depth) % 4 == 2
       ? '69%'
       : '94%';
 
   return (
     <Styled.Wrapper svgLeft={svgLeft}>
-      {[...Array(Math.floor(depth / 4) + 1)].map((el, index) => (
+      {[...Array(Math.ceil(depth / 4) + 1)].map((el, index) => (
         <Styled.NsptContainer key={index}>
           <Styled.NsptContainerMob>
             {depth > index * 4 - 1 && (

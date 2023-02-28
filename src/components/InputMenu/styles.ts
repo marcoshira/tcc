@@ -40,9 +40,9 @@ const frameSize = {
       ? theme.frameSizes.ltsmall
       : depth < 10
       ? theme.frameSizes.small
-      : `${(depth - 10) * 2.5 + 26}rem`};
+      : `${(Math.ceil(depth) - 10) * 2.5 + 26}rem`};
     @media ${theme.media.gteMedium} {
-      height: ${`${(Math.floor(depth / 4) + 1) * 6}rem`};
+      height: ${`${(Math.floor(Math.ceil(depth) / 4) + 1) * 6}rem`};
     }
   `,
 

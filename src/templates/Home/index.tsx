@@ -220,7 +220,7 @@ export function Home({ modalElement = null }: HomeProps) {
             onFormChangeShape={handleShape}
           />
         </InputContainer>
-        <InputContainer
+        {/* <InputContainer
           title="Tipos de Solo"
           frameSize="layer"
           layer={formLayer}
@@ -237,7 +237,7 @@ export function Home({ modalElement = null }: HomeProps) {
             onFormChangeDepthSoilLayer={handleLayerDepthSoil}
             layer={formLayer}
           />
-        </InputContainer>
+        </InputContainer> */}
         <InputContainer
           title="Dados de SPT"
           frameSize="spt"

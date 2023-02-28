@@ -12,9 +12,10 @@ export const Wrapper = styled.div<svgDist>`
     justify-content: space-evenly;
     width: 100%;
     > div {
+      position: relative;
       > svg {
         position: absolute;
-        bottom: 45px;
+        bottom: 50px;
         left: ${svgLeft};
         width: 25px;
         color: ${theme.colors.primaryColor};
