@@ -38,7 +38,8 @@ export function Home({ modalElement = null }: HomeProps) {
   const [disabledSPT, setDisabledSPT] = useState(true);
   const [disabledSoil, setDisabledSoil] = useState(true);
 
-  const [yellowSPT, setYellowSPT] = useState(false);
+  const [yellowSPT65, setYellowSPT65] = useState(false);
+  const [yellowSPT0, setYellowSPT0] = useState(false);
 
   const [formLayer, setFormLayer] = useState(1);
   const [soilLayer, setSoilLayer] = useState({});
@@ -67,15 +68,16 @@ export function Home({ modalElement = null }: HomeProps) {
   const handleComp = (comp) => {
     setFormComp(comp);
 
+    //Deletar dados de nspt após mudar o comprimento
     Object.keys(formSPT).forEach((val) => {
       if (+val > +comp + 1) {
         delete formSPT[val];
       }
     });
 
+    //Erro ao mudar o comprimento para algo maior que a quantidade de nspt
     setDisabledSPT(
       Object.values(formSPT).length <= +comp ||
-        Object.values(formSPT).includes('0') ||
         Object.values(formSPT).includes(''),
     );
   };
@@ -86,19 +88,29 @@ export function Home({ modalElement = null }: HomeProps) {
 
   const handleSpt = (nspt, index) => {
     formSPT[index + 1] = nspt;
-    setYellowSPT(false);
+
+    //Alerta ao colocar valor de nspt maior que 65 ou igual a 0
+    setYellowSPT65(false);
+    setYellowSPT0(false);
+
+    //Erro ao nao preencher todos os valores de nspt
     setDisabledSPT(
       Object.values(formSPT).length <= +formComp ||
-        Object.values(formSPT).includes('0') ||
         Object.values(formSPT).includes(''),
     );
 
     Object.values(formSPT).map((val) => {
-      if (+val <= 0) {
+      //Erro ao colocar valor negativo
+      if (+val < 0) {
         setDisabledSPT(true);
       }
+      //Alerta ao colocar valor > 65
       if (+val > 65) {
-        setYellowSPT(true);
+        setYellowSPT65(true);
+      }
+      //Alerta a colocar 0
+      if (+val == 0) {
+        setYellowSPT0(true);
       }
     });
   };
@@ -110,6 +122,11 @@ export function Home({ modalElement = null }: HomeProps) {
       depthSoil: depthSoilLayer[index],
     };
     setDisabledSoil(Object.values(soilLayer).length != formLayer);
+    Object.values(formSoil).map((val) => {
+      if (!val.soil.subtype) {
+        setDisabledSoil(true);
+      }
+    });
   };
 
   const handleLayerDepthSoil = (depthSoil, index) => {
@@ -243,9 +260,11 @@ export function Home({ modalElement = null }: HomeProps) {
           frameSize="spt"
           depth={+formComp}
           red={disabledSPT}
-          yellow={yellowSPT}
+          yellow={yellowSPT65 || yellowSPT0}
           alert={
-            'Algum valor se encontra acima do normal, favor conferir novamente.'
+            yellowSPT65
+              ? 'Algum valor se encontra acima do normal, favor conferir novamente.'
+              : 'Algum valor se encontra nulo, favor conferir novamente.'
           }
           errorMessage={'Dados incompletos'}
           instruction="Após informar o comprimento do fuste, informe os valores de Nspt de cada metro até aquele imediatamente abaixo da ponta da estaca."
