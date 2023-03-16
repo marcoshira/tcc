@@ -263,7 +263,7 @@ export function Home({ modalElement = null }: HomeProps) {
           yellow={yellowSPT65 || yellowSPT0}
           alert={
             yellowSPT65
-              ? 'Algum valor se encontra acima do normal, favor conferir novamente.'
+              ? 'Algum valor se encontra acima do admitido pela norma, favor conferir novamente.'
               : 'Algum valor se encontra nulo, favor conferir novamente.'
           }
           errorMessage={'Dados incompletos'}
