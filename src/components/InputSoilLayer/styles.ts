@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Wrapper as Button } from '../Button/styles';
 
-export const Wrapper = styled.div`
+export const InputSoilLayerWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
@@ -58,6 +58,7 @@ export const Wrapper = styled.div`
 
     @media ${theme.media.gteMedium} {
       width: 85%;
+      padding-top: 5rem;
 
       ${Button} {
         width: 30%;

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Wrapper as NumberInput } from '../NumberInput/styles';
 
-export const Wrapper = styled.div`
+export const SoilLayerWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
@@ -39,7 +39,12 @@ export const Wrapper = styled.div`
     p.disclaimer {
       color: grey;
       font-size: ${theme.font.sizes.small};
+      width: 80%;
       margin-top: 0;
+
+      @media ${theme.media.gteMedium} {
+        width: auto;
+      }
     }
 
     ${NumberInput} {

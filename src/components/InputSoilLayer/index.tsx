@@ -33,7 +33,7 @@ export const InputSoilLayer = ({
   };
 
   return (
-    <Styled.Wrapper>
+    <Styled.InputSoilLayerWrapper>
       {[...Array(layer)].map((el, index) => (
         <SoilLayer
           index={index}
@@ -46,6 +46,6 @@ export const InputSoilLayer = ({
       <Button disabled={disabled} onClick={HandleClick}>
         Adicionar Camada
       </Button>
-    </Styled.Wrapper>
+    </Styled.InputSoilLayerWrapper>
   );
 };

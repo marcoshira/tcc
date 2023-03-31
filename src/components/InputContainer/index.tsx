@@ -43,7 +43,7 @@ export const InputContainer = ({
   };
 
   return (
-    <Styled.Wrapper
+    <Styled.InputContainerWrapper
       red={red && touched}
       yellow={yellow}
       onBlur={() => setTouched(true)}
@@ -59,6 +59,6 @@ export const InputContainer = ({
       <InputMenu display={display} size={frameSize} depth={depth} layer={layer}>
         {children}
       </InputMenu>
-    </Styled.Wrapper>
+    </Styled.InputContainerWrapper>
   );
 };

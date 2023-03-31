@@ -14,14 +14,18 @@ export const Wrapper = styled.div<svgDist>`
     > div {
       position: relative;
       > svg {
-        position: absolute;
-        bottom: 50px;
-        left: ${svgLeft};
-        width: 25px;
-        color: ${theme.colors.primaryColor};
+        display: none;
+        @media ${theme.media.gteMedium} {
+          position: absolute;
+          display: block;
+          bottom: 50px;
+          left: ${svgLeft};
+          width: 25px;
+          color: ${theme.colors.primaryColor};
 
-        &:hover {
-          color: ${theme.colors.orange};
+          &:hover {
+            color: ${theme.colors.orange};
+          }
         }
       }
       &:hover {

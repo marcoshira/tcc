@@ -210,7 +210,7 @@ export function Home({ modalElement = null }: HomeProps) {
   }, [formLayer, soilLayer]);
 
   return (
-    <Styled.Wrapper id="Home">
+    <Styled.HomeWrapper id="Home">
       <Heading caption="Marcos Hirazawa">Estaca Web</Heading>
       <Wrapper>
         <InputContainer
@@ -296,6 +296,6 @@ export function Home({ modalElement = null }: HomeProps) {
           data={finalData}
         />
       )}
-    </Styled.Wrapper>
+    </Styled.HomeWrapper>
   );
 }

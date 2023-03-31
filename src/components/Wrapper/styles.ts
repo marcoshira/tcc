@@ -6,17 +6,16 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
 
     @media ${theme.media.gteMedium} {
       width: 85%;
-      margin-top: ${theme.spacings.huge};
+      margin-top: ${theme.spacings.large};
     }
     @media ${theme.media.gteBig} {
       width: 60%;
-      margin-top: ${theme.spacings.huge};
     }
   `}
 `;

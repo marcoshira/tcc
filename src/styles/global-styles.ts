@@ -18,6 +18,8 @@ body{
   font-size: 1.6rem;
   font-family: ${({ theme }) => theme.font.family.default};
   font-weight: 400;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6{

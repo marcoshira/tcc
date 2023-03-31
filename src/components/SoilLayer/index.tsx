@@ -23,7 +23,7 @@ export const SoilLayer = ({
   };
 
   return (
-    <Styled.Wrapper>
+    <Styled.SoilLayerWrapper>
       <Close aria-label="CloseLayer" onClick={HandleClose} />
       <p>{`Camada ${index + 1}`}</p>
       {index === 0 && (
@@ -40,6 +40,6 @@ export const SoilLayer = ({
         onFormChangeSoil={(val) => onLayerFormChangeSoil(val, index)}
         index={index}
       />
-    </Styled.Wrapper>
+    </Styled.SoilLayerWrapper>
   );
 };
