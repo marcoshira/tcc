@@ -12,5 +12,9 @@ export const HomeWrapper = styled.div`
         margin-bottom: ${theme.spacings.huge};
       }
     }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   `}
 `;

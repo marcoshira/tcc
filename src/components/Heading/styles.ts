@@ -29,6 +29,7 @@ const titleCase = (uppercase) => css`
 
 export const Title = styled.h1<HeadingProps>`
   ${({ theme, size, uppercase }) => css`
+    width: 100%;
     color: white;
     margin: 0;
     margin-bottom: ${theme.spacings.small};

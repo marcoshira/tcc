@@ -19,6 +19,7 @@ body{
   font-family: ${({ theme }) => theme.font.family.default};
   font-weight: 400;
   width: 100%;
+  height: 100vh;
   overflow-x: hidden;
 }
 
@@ -41,7 +42,8 @@ ul, ol{
 }
 
 a{
-  color: ${({ theme }) => theme.colors.secondaryColor}
+  color: ${({ theme }) => theme.colors.secondaryColor};
+  cursor: pointer;
 }
 
 .table {

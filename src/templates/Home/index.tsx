@@ -12,6 +12,7 @@ import { AokiVelloso } from '../../utils/aokiVelloso';
 import { DecourtQuaresma } from '../../utils/decourtQuaresma';
 import Modal from 'react-modal';
 import * as Styled from './styles';
+import { Footer } from '../../components/Footer';
 
 export type SoilType = {
   type: string;
@@ -289,6 +290,8 @@ export function Home({ modalElement = null }: HomeProps) {
           Calcular
         </Button>
       </Wrapper>
+      <Footer />
+
       {modalVisible && (
         <ModalOrder
           isOpen={modalVisible}

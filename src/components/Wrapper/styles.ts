@@ -6,9 +6,6 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
 
     @media ${theme.media.gteMedium} {
       width: 85%;
