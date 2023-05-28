@@ -18,6 +18,10 @@ export const Footer = styled.div`
     a {
       font-size: 18px;
       text-decoration: none;
+      transition: ${theme.transitions.faster};
+      &:hover {
+        color: ${theme.colors.orange};
+      }
     }
 
     @media ${theme.media.gteMedium} {
@@ -59,6 +63,7 @@ export const IconsContainer = styled.div`
     justify-content: center;
     p {
       text-align: center;
+      margin-bottom: 10px;
     }
     svg {
       color: white;
@@ -76,7 +81,7 @@ export const IconsInnerContainer = styled.div`
     align-items: center;
     svg {
       color: white;
-      height: 40px;
+      height: 30px;
       margin-right: 10px;
     }
     a {

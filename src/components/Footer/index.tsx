@@ -23,7 +23,7 @@ export const Footer = () => {
 
       <Styled.IconsContainer>
         <p>Contato:</p>
-        <Styled.IconsInnerContainer>
+        {/* <Styled.IconsInnerContainer>
           <Whatsapp />
           <a
             href="https://contate.me/marcoshirazawa"
@@ -32,7 +32,7 @@ export const Footer = () => {
           >
             +55 43 99672-6422
           </a>
-        </Styled.IconsInnerContainer>
+        </Styled.IconsInnerContainer> */}
 
         <Styled.IconsInnerContainer>
           <Mail />
